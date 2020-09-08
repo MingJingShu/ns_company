@@ -1,0 +1,9 @@
+
+hamburger fold-out-menu
+https://codepen.io/erikterwan/pen/EVzeRP?editors=1100  
+
+slider
+https://bootstrap.hexschool.com/docs/4.2/components/carousel/
+
+demo
+https://marimo-dental.com/
