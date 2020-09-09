@@ -1,3 +1,14 @@
+@charset "UTF-8";
+@font-face {
+  font-family: 'my_font';
+  src: local("微軟正黑體");
+  unicode-range: U+4E00-9FFF ,U+2E80-2EFF; }
+
+@font-face {
+  font-family: 'my_font';
+  src: url(../font/Bahnschrift.TTF);
+  unicode-range: U+0020-007F; }
+
 .clearfix {
   display: block;
   content: "";
@@ -6,7 +17,8 @@
 * {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  font-family: 'my_font'; }
 
 a {
   text-decoration: none; }
@@ -16,7 +28,6 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
   padding: 0;
   border: 0;
   font-size: 100%;
-  font: inherit;
   vertical-align: baseline; }
 
 html {
@@ -26,13 +37,8 @@ label {
   position: relative; }
 
 body {
-  line-height: 1; }
-
-h1, p, button, input, a {
-  font-family: Microsoft JhengHei; }
-
-nav li {
-  font-family: Microsoft JhengHei; }
+  line-height: 1;
+  margin: 0; }
 
 ul, li, body {
   margin: 0;
@@ -44,32 +50,46 @@ ul, li {
 button {
   cursor: pointer; }
 
-.flex-mode {
+.flex_mode {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex; }
 
-/*icon-sizes*/
-.icon-phone {
-  font-size: 22px; }
-
 .container {
-  height: 1060px; }
-
-header {
-  position: fixed;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 150px;
-  z-index: 10; }
+  height: auto; }
 
 .logo {
   cursor: pointer;
   background: url(../images/logo.png) no-repeat;
-  width: 150px;
-  height: 150px;
-  background-size: contain; }
+  width: 3.75rem;
+  height: 3.75rem;
+  background-size: 100%;
+  display: inline-block; }
+
+header {
+  position: relative;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 3.75rem;
+  z-index: 10; }
+  header.active {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0; }
+  header ul.nav {
+    float: right;
+    line-height: 3.75rem; }
+    header ul.nav li {
+      display: inline-block;
+      text-align: center;
+      width: 3.75rem;
+      line-height: 1;
+      vertical-align: middle; }
+      header ul.nav li i {
+        font-size: 1.4rem;
+        display: inline-block;
+        margin-bottom: .125rem; }
 
 .contact {
   width: 100%;
@@ -80,41 +100,8 @@ header {
   -ms-flex-pack: justify;
   justify-content: space-between; }
 
-.contact-h {
-  font-family: 'Noto Serif TC', serif; }
-
-.contact-f i:nth-child(3) {
-  margin-left: 50px; }
-
 .links li {
   cursor: pointer; }
-
-nav {
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  -webkit-box-pack: space-evenly;
-  -ms-flex-pack: space-evenly;
-  justify-content: space-evenly;
-  -webkit-box-align: end;
-  -ms-flex-align: end;
-  align-items: flex-end;
-  width: 100%;
-  height: 120px;
-  padding: 20px 80px; }
-  nav ul {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex; }
-    nav ul li {
-      font-size: 17px; }
-    nav ul li:after {
-      content: "|";
-      color: #afafaf;
-      padding: 0 10px; }
-    nav ul li:last-child:after {
-      display: none; }
 
 main {
   display: -webkit-box;
@@ -133,7 +120,9 @@ main {
     background: url(../images/img2.png) no-repeat; }
   .content .img3 {
     background: url(../images/img3.png) no-repeat; }
-  .content .img1, .content .img2, .content .img3 {
+  .content .img1,
+  .content .img2,
+  .content .img3 {
     width: 559px;
     height: 280px;
     background-size: contain; }
