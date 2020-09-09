@@ -3,9 +3,27 @@
 .flex_mode {
   display: flex;
 }
-
+@keyframes line{
+  0%{
+    background-position: right bottom;
+    background-size: 100% 1px;
+  }
+  50%{
+    background-position: right bottom;
+    background-size: 0% 1px;
+  }
+  51%{
+    background-position: left bottom;
+    background-size: 0% 1px;
+  }
+  100%{
+    background-position: left bottom;
+    background-size: 100% 1px;
+  }
+}
 .container {
   height: auto;
+  overflow-x: hidden;
 }
 .logo {
   cursor: pointer;
@@ -30,40 +48,46 @@ header {
     &.nav {
       float: right;
       line-height: 3.75rem;
+      background: #fff;
+      border-radius: 12px;
       li {
         display: inline-block;
         text-align: center;
         width: 3.75rem;
         line-height: 1;
         vertical-align: middle;
-        i{
-          font-size: 1.4rem;
-          display: inline-block;
-          margin-bottom: .125rem;
+        padding: 0.25rem 0;
+        border-radius: 12px;
+        &:hover {
+          background: #000;
+          i,
+          p {
+            color: #fff;
+          }
         }
-        
+        i {
+          display: inline-block;
+          font-size: 1.4rem;
+          margin-bottom: 0.125rem;
+        }
+        i,
+        p {
+          color: #1ba1e6;
+        }
       }
     }
   }
 }
-
-.contact {
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-}
-
-.links li {
-  cursor: pointer;
-}
-
 main {
-  display: flex;
-  justify-content: center;
+  position: relative;
+  width: 100%;
+  padding: 0 1.25rem;
 }
-.content {
-  margin-top: 7%;
-  width: 29%;
+
+.slick_w {
+  // margin-top: 7%;
+  width: 100%;
+  margin: 0.5rem auto 0.5rem;
   .img1 {
     background: url(../images/img1.png) no-repeat;
   }
@@ -77,8 +101,30 @@ main {
   .img1,
   .img2,
   .img3 {
-    width: 559px;
-    height: 280px;
-    background-size: contain;
+    width: 100vw;
+    height: 10.5rem;
+    background-size: 100%;
+  }
+}
+/*大標題 h1*/
+h1 {
+  color: #1ba1e6;
+  font-size: 1.25rem;
+  text-transform: uppercase;
+  letter-spacing: 0.06rem;
+  margin: 0.5rem 0;
+}
+/*infor*/
+.index_infor {
+  li {
+    color: #535353;
+    line-height: 3;
+    background-position: 100% 100%;
+    background-size: 100% 1px;
+    background-repeat: no-repeat;
+    background-image: linear-gradient(#a7a7a7, #a7a7a7);
+    &:hover,&:active{
+      animation: line .8s cubic-bezier(.165,.84,.44,1);
+    }
   }
 }
