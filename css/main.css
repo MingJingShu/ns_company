@@ -175,3 +175,35 @@ h1 {
   .index_infor li:hover, .index_infor li:active {
     -webkit-animation: line 0.8s cubic-bezier(0.165, 0.84, 0.44, 1);
     animation: line 0.8s cubic-bezier(0.165, 0.84, 0.44, 1); }
+
+footer {
+  position: fixed;
+  bottom: 0;
+  width: 100vw;
+  height: 3.75rem;
+  line-height: 3.75rem; }
+  footer .group {
+    height: 3.75rem;
+    width: calc(100% - 3.75rem);
+    text-align: center; }
+    footer .group .b50 {
+      float: left;
+      width: 50%;
+      height: 100%;
+      background: #1ba1e6; }
+      footer .group .b50:last-child {
+        background: #82c7e6; }
+      footer .group .b50 .wrap {
+        display: inline-block;
+        line-height: 1;
+        vertical-align: middle; }
+        footer .group .b50 .wrap p,
+        footer .group .b50 .wrap i {
+          display: inline-block;
+          color: #fff; }
+  footer .hamburger {
+    width: 3.75rem;
+    height: 100%;
+    background: #ecf7fb; }
+  footer .group, footer .hamburger {
+    float: left; }

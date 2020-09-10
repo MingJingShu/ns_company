@@ -3,20 +3,20 @@
 .flex_mode {
   display: flex;
 }
-@keyframes line{
-  0%{
+@keyframes line {
+  0% {
     background-position: right bottom;
     background-size: 100% 1px;
   }
-  50%{
+  50% {
     background-position: right bottom;
     background-size: 0% 1px;
   }
-  51%{
+  51% {
     background-position: left bottom;
     background-size: 0% 1px;
   }
-  100%{
+  100% {
     background-position: left bottom;
     background-size: 100% 1px;
   }
@@ -123,8 +123,48 @@ h1 {
     background-size: 100% 1px;
     background-repeat: no-repeat;
     background-image: linear-gradient(#a7a7a7, #a7a7a7);
-    &:hover,&:active{
-      animation: line .8s cubic-bezier(.165,.84,.44,1);
+    &:hover,
+    &:active {
+      animation: line 0.8s cubic-bezier(0.165, 0.84, 0.44, 1);
     }
+  }
+}
+footer {
+  position: fixed;
+  bottom: 0;
+  width: 100vw;
+  height: 3.75rem;
+  line-height: 3.75rem;
+  .group {
+    height: 3.75rem;
+    width: calc(100% - 3.75rem);
+    text-align: center;
+    .b50 {
+      float: left;
+      width: 50%;
+      height: 100%;
+      background: #1ba1e6;
+      &:last-child {
+        background: #82c7e6;
+      }
+      .wrap {
+        display: inline-block;
+        line-height: 1;
+        vertical-align: middle;
+        p,
+        i {
+          display: inline-block;
+          color: #fff;
+        }
+      }
+    }
+  }
+  .hamburger{
+    width: 3.75rem;
+    height: 100%;
+    background: #ecf7fb;
+  }
+  .group,.hamburger{
+    float: left;
   }
 }
