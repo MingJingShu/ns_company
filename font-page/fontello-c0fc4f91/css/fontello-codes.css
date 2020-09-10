@@ -1,5 +1,6 @@
 
 .icon-phone:before { content: '\e800'; } /* '' */
+.icon-calendar:before { content: '\e801'; } /* '' */
 .icon-location:before { content: '\e802'; } /* '' */
 .icon-facebook:before { content: '\e803'; } /* '' */
 .icon-twitter:before { content: '\e804'; } /* '' */
@@ -9,6 +10,7 @@
 .icon-up-open:before { content: '\e808'; } /* '' */
 .icon-tools:before { content: '\e811'; } /* '' */
 .icon-globe-alt-outline:before { content: '\e812'; } /* '' */
+.icon-chat-empty:before { content: '\f0e6'; } /* '' */
 .icon-angle-right:before { content: '\f105'; } /* '' */
 .icon-github:before { content: '\f113'; } /* '' */
 .icon-instagram:before { content: '\f16d'; } /* '' */
