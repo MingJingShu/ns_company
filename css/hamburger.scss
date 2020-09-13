@@ -1,10 +1,61 @@
-.hamburger_window{
-    position: absolute;
-    width: 100vw;
-    height: calc(100vh - 3.75rem);
-    top: 0;
-    transform: translateX(-100%);
-    &.active{
-        transform: translateX(0%);
+.hamburger_window {
+  position: fixed;
+  width: 100vw;
+  height: calc(100vh - 3.75rem);
+  top: 0;
+  transform: translateX(100%);
+  background: #077c96;
+  z-index: 100;
+  transition: all 0.3s ease-in-out;
+  h1 {
+    color: #fff;
+    line-height: 3.75rem;
+    padding: 0 1.25rem;
+    .logo_hamburger,
+    p {
+      display: inline-block;
     }
+    .logo_hamburger {
+      background: url(../images/logo_hamburger.png) no-repeat;
+      width: 5rem;
+      height: 3.75rem;
+      background-size: 100%;
+      vertical-align: bottom;
+    }
+    p {
+      vertical-align: middle;
+      line-height: 1;
+      padding-top: 0.5rem;
+      margin-left: 1rem;
+    }
+  }
+  ul {
+    margin: 1.25rem 0;
+    padding: 0 1.25rem;
+    li {
+      color: #fff;
+      line-height: 3rem;
+      position: relative;
+      background-position: 100% 100%;
+      background-size: 100% 1px;
+      background-repeat: no-repeat;
+      background-image: linear-gradient(#fff, #fff);
+      &:hover {
+        animation: line 0.8s cubic-bezier(0.165, 0.84, 0.44, 1);
+      }
+      &:first-child {
+        border-top: 1px solid #fff;
+      }
+      .right_cross {
+        float: right;
+        position: relative;
+        font-size: 2rem;
+        padding-right: 1rem;
+      }
+    }
+  }
+  &.active {
+    transform: translateX(0%);
+    transition: all 0.3s ease-in-out;
+  }
 }
