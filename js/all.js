@@ -1,7 +1,7 @@
 $(document).ready(function () {
   console.log("hello");
 
-  $(".slick_w").slick({
+  $(".slick_window").slick({
     slidesToShow: 1,
     slidesToScroll: 1,
     autoplay: true,

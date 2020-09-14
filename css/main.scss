@@ -1,5 +1,5 @@
 @import "./reset.scss";
-@import './hamburger.scss';
+@import "./hamburger.scss";
 .flex_mode {
   display: flex;
 }
@@ -84,23 +84,23 @@ main {
   padding: 0 1.25rem;
 }
 
-.slick_w {
+.slick_window {
   // margin-top: 7%;
   width: 100%;
   margin: 0.5rem auto 0.5rem;
-  .img1 {
+  .slick_img1 {
     background: url(../images/img1.png) no-repeat;
   }
-  .img2 {
+  .slick_img2 {
     background: url(../images/img2.png) no-repeat;
   }
-  .img3 {
+  .slick_img3 {
     background: url(../images/img3.png) no-repeat;
   }
 
-  .img1,
-  .img2,
-  .img3 {
+  .slick_img1,
+  .slick_img2,
+  .slick_img3 {
     width: 100vw;
     height: 10.5rem;
     background-size: 100%;
@@ -135,6 +135,7 @@ footer {
   width: 100vw;
   height: 3.75rem;
   line-height: 3.75rem;
+  z-index: 101;
   .group {
     height: 3.75rem;
     width: calc(100% - 3.75rem);
@@ -151,7 +152,7 @@ footer {
         display: inline-block;
         line-height: 1;
         vertical-align: middle;
-        i{
+        i {
           font-size: 1.25rem;
         }
         p,
@@ -188,19 +189,19 @@ footer {
       .line_wrap {
         position: relative;
         transform: rotate(45deg);
-        &:before{
-          content: '';
+        &:before {
+          content: "";
           position: absolute;
           top: 50%;
           left: 50%;
-          transform: translate(-50%,-50%);
+          transform: translate(-50%, -50%);
           width: 2.5rem;
           height: 2.5rem;
           border: 1px solid #1ba1e6;
           border-radius: 100%;
         }
         .line {
-          &:nth-child(2){
+          &:nth-child(2) {
             opacity: 0;
           }
           &:first-child {

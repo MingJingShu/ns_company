@@ -68,10 +68,10 @@ button {
     color: #fff;
     line-height: 3.75rem;
     padding: 0 1.25rem; }
-    .hamburger_window h1 .logo_hamburger,
+    .hamburger_window h1 .hamburger_logo,
     .hamburger_window h1 p {
       display: inline-block; }
-    .hamburger_window h1 .logo_hamburger {
+    .hamburger_window h1 .hamburger_logo {
       background: url(../images/logo_hamburger.png) no-repeat;
       width: 5rem;
       height: 3.75rem;
@@ -201,18 +201,18 @@ main {
   width: 100%;
   padding: 0 1.25rem; }
 
-.slick_w {
+.slick_window {
   width: 100%;
   margin: 0.5rem auto 0.5rem; }
-  .slick_w .img1 {
+  .slick_window .slick_img1 {
     background: url(../images/img1.png) no-repeat; }
-  .slick_w .img2 {
+  .slick_window .slick_img2 {
     background: url(../images/img2.png) no-repeat; }
-  .slick_w .img3 {
+  .slick_window .slick_img3 {
     background: url(../images/img3.png) no-repeat; }
-  .slick_w .img1,
-  .slick_w .img2,
-  .slick_w .img3 {
+  .slick_window .slick_img1,
+  .slick_window .slick_img2,
+  .slick_window .slick_img3 {
     width: 100vw;
     height: 10.5rem;
     background-size: 100%; }
@@ -245,7 +245,8 @@ footer {
   bottom: 0;
   width: 100vw;
   height: 3.75rem;
-  line-height: 3.75rem; }
+  line-height: 3.75rem;
+  z-index: 101; }
   footer .group {
     height: 3.75rem;
     width: calc(100% - 3.75rem);
@@ -297,7 +298,7 @@ footer {
       -ms-transform: rotate(45deg);
       transform: rotate(45deg); }
       footer .hamburger.active .line_wrap:before {
-        content: '';
+        content: "";
         position: absolute;
         top: 50%;
         left: 50%;
