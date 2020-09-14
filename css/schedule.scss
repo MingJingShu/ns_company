@@ -1,0 +1,41 @@
+.schedule_header {
+  float: right;
+  margin-top: -2rem;
+  background: #1ba1e6;
+  color: #fff;
+  border-radius: 40px;
+  padding: 0.8rem;
+  font-size: 0.9rem;
+}
+.schedule_date {
+  float: right;
+  width: 65%;
+  text-align: right;
+  margin-top: 1rem;
+  padding-right: 0.5rem;
+  .date_box7 {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    float: right;
+    margin-bottom: 1rem;
+    p {
+      font-weight: bold;
+    }
+  }
+}
+.schedule_time {
+    margin-top: 3rem;
+    float: left;
+    width: 35%;
+    height: auto;
+    display: flex;
+    justify-content: left;
+    align-items: flex-end;
+    flex-wrap: wrap;
+  p {
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+}

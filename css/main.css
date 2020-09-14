@@ -114,6 +114,58 @@ button {
     -o-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out; }
 
+.schedule_header {
+  float: right;
+  margin-top: -2rem;
+  background: #1ba1e6;
+  color: #fff;
+  border-radius: 40px;
+  padding: 0.8rem;
+  font-size: 0.9rem; }
+
+.schedule_date {
+  float: right;
+  width: 65%;
+  text-align: right;
+  margin-top: 1rem;
+  padding-right: 0.5rem; }
+  .schedule_date .date_box7 {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    float: right;
+    margin-bottom: 1rem; }
+    .schedule_date .date_box7 p {
+      font-weight: bold; }
+
+.schedule_time {
+  margin-top: 3rem;
+  float: left;
+  width: 35%;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: left;
+  -ms-flex-pack: left;
+  justify-content: left;
+  -webkit-box-align: end;
+  -ms-flex-align: end;
+  align-items: flex-end;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap; }
+  .schedule_time p {
+    width: 100%;
+    margin-bottom: 1rem; }
+
 .flex_mode {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -216,6 +268,9 @@ main {
     width: 100vw;
     height: 10.5rem;
     background-size: 100%; }
+  .slick_window .slick-dotted.slick-slider {
+    padding-bottom: 1rem;
+    margin: 0; }
 
 /*大標題 h1*/
 h1 {
@@ -223,7 +278,7 @@ h1 {
   font-size: 1.25rem;
   text-transform: uppercase;
   letter-spacing: 0.06rem;
-  margin: 0.5rem 0; }
+  padding: 2rem 0 .5rem; }
 
 /*infor*/
 .index_infor li {

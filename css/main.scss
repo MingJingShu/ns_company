@@ -1,5 +1,6 @@
 @import "./reset.scss";
 @import "./hamburger.scss";
+@import "./schedule.scss";
 .flex_mode {
   display: flex;
 }
@@ -105,6 +106,10 @@ main {
     height: 10.5rem;
     background-size: 100%;
   }
+  .slick-dotted.slick-slider{
+    padding-bottom: 1rem;
+    margin: 0;
+  }
 }
 /*大標題 h1*/
 h1 {
@@ -112,7 +117,7 @@ h1 {
   font-size: 1.25rem;
   text-transform: uppercase;
   letter-spacing: 0.06rem;
-  margin: 0.5rem 0;
+  padding: 2rem 0 .5rem;
 }
 /*infor*/
 .index_infor {
