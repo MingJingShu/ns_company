@@ -1,7 +1,9 @@
 @import "./reset.scss";
+/*hamburger--botton*/
 @import "./hamburger.scss";
 @import "./schedule.scss";
 @import "./project.scss";
+@import "./infor.scss";
 .flex_mode {
   display: flex;
 }
@@ -115,26 +117,15 @@ main {
 /*大標題 h1*/
 h1 {
   color: #1ba1e6;
-  font-size: 1.25rem;
+  font-size: 1rem;
   text-transform: uppercase;
   letter-spacing: 0.06rem;
   padding: 2rem 0 .5rem;
-}
-/*infor*/
-.index_infor {
-  li {
-    color: #535353;
-    line-height: 3;
-    background-position: 100% 100%;
-    background-size: 100% 1px;
-    background-repeat: no-repeat;
-    background-image: linear-gradient(#a7a7a7, #a7a7a7);
-    &:hover,
-    &:active {
-      animation: line 0.8s cubic-bezier(0.165, 0.84, 0.44, 1);
-    }
+  &.h1--mid{
+    text-align: center;
   }
 }
+
 footer {
   position: fixed;
   bottom: 0;

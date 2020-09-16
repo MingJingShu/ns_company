@@ -1,11 +1,14 @@
 .schedule {
-    position: relative;
-    height: 8rem;
+  position: relative;
+  height: auto;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+  overflow: hidden;
 }
 .schedule_header {
     position: absolute;
     right: .5rem;
-    top: -2.5rem;
+    top: .5rem;
     background: #1ba1e6;
     color: #fff;
     border-radius: 40px;

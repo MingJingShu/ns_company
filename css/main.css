@@ -51,6 +51,7 @@ ul, li {
 button {
   cursor: pointer; }
 
+/*hamburger--botton*/
 .hamburger_window {
   position: fixed;
   width: 100vw;
@@ -116,12 +117,15 @@ button {
 
 .schedule {
   position: relative;
-  height: 8rem; }
+  height: auto;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+  overflow: hidden; }
 
 .schedule_header {
   position: absolute;
   right: .5rem;
-  top: -2.5rem;
+  top: .5rem;
   background: #1ba1e6;
   color: #fff;
   border-radius: 40px;
@@ -180,6 +184,77 @@ button {
   width: 100%;
   float: left;
   text-align: center; }
+
+.project h1 {
+  padding: 1rem 0 1rem; }
+
+.project--box2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  width: 100%;
+  height: auto; }
+  .project--box2 .project--box2_wrap {
+    width: calc(50% - .313rem);
+    height: auto; }
+
+.project__img1 {
+  background: url(../images/labs.png) no-repeat;
+  background-size: 500%;
+  width: 100%;
+  height: calc((50vw - 2.5rem) / 2);
+  background-position-x: 0%; }
+
+.project__img2 {
+  background: url(../images/labs.png) no-repeat;
+  background-size: 500%;
+  width: 100%;
+  height: calc((50vw - 2.5rem) / 2);
+  background-position-x: 25%; }
+
+.project__img3 {
+  background: url(../images/labs.png) no-repeat;
+  background-size: 500%;
+  width: 100%;
+  height: calc((50vw - 2.5rem) / 2);
+  background-position-x: 50%; }
+
+.project__img4 {
+  background: url(../images/labs.png) no-repeat;
+  background-size: 500%;
+  width: 100%;
+  height: calc((50vw - 2.5rem) / 2);
+  background-position-x: 75%; }
+
+.project__txt {
+  height: 3.6rem;
+  line-height: 1.2;
+  text-align: center;
+  margin: .5rem 0;
+  font-weight: bold;
+  font-size: 0.938rem; }
+
+/*infor*/
+.infor_li li {
+  color: #535353;
+  line-height: 3;
+  background-position: 100% 100%;
+  background-size: 100% 1px;
+  background-repeat: no-repeat;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#a7a7a7), to(#a7a7a7));
+  background-image: -webkit-linear-gradient(#a7a7a7, #a7a7a7);
+  background-image: -o-linear-gradient(#a7a7a7, #a7a7a7);
+  background-image: linear-gradient(#a7a7a7, #a7a7a7); }
+  .infor_li li:hover, .infor_li li:active {
+    -webkit-animation: line 0.8s cubic-bezier(0.165, 0.84, 0.44, 1);
+    animation: line 0.8s cubic-bezier(0.165, 0.84, 0.44, 1); }
 
 .flex_mode {
   display: -webkit-box;
@@ -290,25 +365,12 @@ main {
 /*大標題 h1*/
 h1 {
   color: #1ba1e6;
-  font-size: 1.25rem;
+  font-size: 1rem;
   text-transform: uppercase;
   letter-spacing: 0.06rem;
   padding: 2rem 0 .5rem; }
-
-/*infor*/
-.index_infor li {
-  color: #535353;
-  line-height: 3;
-  background-position: 100% 100%;
-  background-size: 100% 1px;
-  background-repeat: no-repeat;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#a7a7a7), to(#a7a7a7));
-  background-image: -webkit-linear-gradient(#a7a7a7, #a7a7a7);
-  background-image: -o-linear-gradient(#a7a7a7, #a7a7a7);
-  background-image: linear-gradient(#a7a7a7, #a7a7a7); }
-  .index_infor li:hover, .index_infor li:active {
-    -webkit-animation: line 0.8s cubic-bezier(0.165, 0.84, 0.44, 1);
-    animation: line 0.8s cubic-bezier(0.165, 0.84, 0.44, 1); }
+  h1.h1--mid {
+    text-align: center; }
 
 footer {
   position: fixed;
