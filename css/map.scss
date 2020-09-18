@@ -1,0 +1,31 @@
+.map{
+    iframe{
+        width: 100%;
+        height: auto;
+    }
+}
+.map-data{
+    overflow: auto;
+
+    .logo{
+        float: left;
+        width: 30%;
+        height: calc(30vw - .625rem);
+        background: url(../images/logo.png)no-repeat;
+        background-size: 100%;
+    }
+    .map-data_wrap{
+        float: left;
+        width: 70%;
+        padding-left: .5rem;
+        h2{
+            font-size: 1.125rem;
+            line-height: 1.5;
+        }
+        p{
+            font-size: .938rem;
+            line-height: 1.3;
+        }
+    }
+
+}
